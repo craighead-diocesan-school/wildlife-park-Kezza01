@@ -16,8 +16,9 @@
 <header>
 <h1>Our American Animals</h1>
 </header>
-<h2>Discover the American Wilderness</h2>
+
 <main>
+<h2>Discover the American Wilderness</h2>
 <p>Venture into the heart of the American wilderness and connect with the rugged beauty of North America's most captivating species. Our American area showcases the incredible bison, the mighty moose, and the industrious beaver – each with their own unique charm and allure.
 
 Immerse yourself in the rich tapestry of the American landscape, as you learn about the vital roles these animals play in their ecosystems and the importance of conservation efforts in preserving their habitats. Join us for guided tours, educational talks, and special events that celebrate the diverse wildlife of the American continent.</p> 
@@ -27,7 +28,7 @@ Immerse yourself in the rich tapestry of the American landscape, as you learn ab
 <a href="index.html">
 Home Page </a>
 <a href="African Area.html"> African Area</a>
-<a href="Artic Area.html"> Arctic Area</a>
+<a href="Arctic Area.html"> Arctic Area</a>
 <a href="American Area.html"> Amearican Area</a>
 <a href="About Us.html"> About us</a>
 </nav>
@@ -55,4 +56,21 @@ border: 3px solid white;
 border-radius: 3rem;
 padding-left: 1em;
 padding-right: 1em; }
+
+body {
+display: grid;
+ grid: 
+"h    h    h" auto
+"n    .   ." auto
+"m    m   m" auto
+"f    .   ." auto
+/ 1fr 5fr 1fr
+}
+
+header { grid-area:h; }
+nav { grid-area: n; }
+main { grid-area: m; }
+footer { grid-area: f; }
+
+footer{ color: white;}
 </style>

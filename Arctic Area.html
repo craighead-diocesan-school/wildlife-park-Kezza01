@@ -18,15 +18,17 @@
 </header>
 <h2>Explore the Enchanting Arctic Tundra</h2>
 
-<main>Embrace the chill and journey to the frozen wonders of the Arctic, where you'll encounter some of the world's most remarkable cold-weather inhabitants. Our Arctic area features the awe-inspiring polar bear, the cunning arctic fox, and the charming fur seal, each perfectly adapted to life in the icy tundra.
-Witness these magnificent animals in action, as you learn about their unique adaptations, survival strategies, and the challenges they face in a rapidly changing environment. Take part in our interactive presentations, meet our dedicated team of Arctic experts, and gain a deeper appreciation for the incredible creatures that call the Arctic home.
+<main>
+<h2>Explore the Enchanting Arctic Tundra</h2>
+<p>Embrace the chill and journey to the frozen wonders of the Arctic, where you'll encounter some of the world's most remarkable cold-weather inhabitants. Our Arctic area features the awe-inspiring polar bear, the cunning arctic fox, and the charming fur seal, each perfectly adapted to life in the icy tundra.
+Witness these magnificent animals in action, as you learn about their unique adaptations, survival strategies, and the challenges they face in a rapidly changing environment. Take part in our interactive presentations, meet our dedicated team of Arctic experts, and gain a deeper appreciation for the incredible creatures that call the Arctic home.</p>
 </main>
 
 <nav> 
 <a href="index.html">
 Home Page </a>
 <a href="African Area.html"> African Area</a>
-<a href="Artic Area.html"> Arctic Area</a>
+<a href="Arctic Area.html"> Arctic Area</a>
 <a href="American Area.html"> Amearican Area</a>
 <a href="About Us.html"> About us</a>
 </nav>
@@ -52,4 +54,21 @@ border: 3px solid white;
 border-radius: 3rem;
 padding-left: 1em;
 padding-right: 1em; }
+
+body {
+display: grid;
+ grid: 
+"h    h    h" auto
+"n    .   ." auto
+"m    m   m" auto
+"f    .   ." auto
+/ 1fr 5fr 1fr
+}
+
+header { grid-area:h; }
+nav { grid-area: n; }
+main { grid-area: m; }
+footer { grid-area: f; }
+
+footer{ color: white;}
 </style>
